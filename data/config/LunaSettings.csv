@@ -1,0 +1,64 @@
+fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
+helmsmanship_header,Helmsmanship Header,Header,Helmsmanship,,,,,Combat
+helmsmanship_stat1,Maneuverability Bonus,Double,50,,Default value: 50,0,2147483647,Combat
+helmsmanship_stat2,Top Speed Bonus,Double,15,,Default value: 15,0,2147483647,Combat
+helmsmanship_stat3,Flat Top Speed Bonus,Double,10,,Default value: 10 - Elite,0,2147483647,Combat
+,,,,,,,,
+combat_endurance_header,Combat Endurance Header,Header,Combat Endurance,,,,,Combat
+combat_endurance_stat1,Peak Operating Time Bonus,Double,60,,Default value: 60,0,2147483647,Combat
+combat_endurance_stat2,Combat Readiness Degredation Rate Bonus,Double,25,,Default value: 25,0,2147483647,Combat
+combat_endurance_stat3,Maximum Combat Readiness Bonus,Double,15,,Default value: 15,0,2147483647,Combat
+combat_endurance_stat4,Hull Regeneration Rate Per Second,Double,0.5,,Default value: 0.5 - Elite,0.0000000001,2147483647,Combat
+combat_endurance_stat5,Maximum Flat Hull Recoverable,Double,2000,,Default value: 2000 - Elite,0,2147483647,Combat
+combat_endurance_stat6,Maximum Percent Hull Recoverable,Double,50,,Default value: 50 - Elite,0,2147483647,Combat
+,,,,,,,,
+impact_mitigation_header,Impact Mitigation Header,Header,Impact Mitigation,,,,,Combat
+impact_mitigation_stat1,Armor Damage Taken Reduction Bonus,Double,25,,Default value: 25,0,2147483647,Combat
+impact_mitigation_stat2,Weapon & Engine Damage Reduction Taken,Double,50,,Default value: 50,0,2147483647,Combat
+impact_mitigation_stat3,Capital & Cruiser Maneuverability Bonus,Double,50,,Default value: 50,0,2147483647,Combat
+impact_mitigation_stat4,Frigate & Destroyer Maneuverability Bonus,Double,25,,Default value: 25,0,2147483647,Combat
+,,,,,,,,
+damage_control_header,Damage Control Header,Header,Damage Control,,,,,Combat
+damage_control_stat1,Hull Damage Taken Reduction Bonus,Double,25,,Default value: 25 - WARNING: values above 95 will make enemy AI not target this ship,0,2147483647,Combat
+damage_control_stat2,Crew Lost Reduction Bonus,Double,50,,Default value: 50,0,2147483647,Combat
+damage_control_stat3,Weapon & Engine Repair Rate Bonus,Double,50,,Default value: 50,0,2147483647,Combat
+,,,,,,,,
+field_modulation_header,Field Modulation Header,Header,Field Modulation,,,,,Combat
+field_modulation_stat1,Shield Damage Taken Reduction Bonus,Double,15,,Default value: 15,0,2147483647,Combat
+field_modulation_stat2,Active Phase Cloak Flux Generation Rate,Double,25,,Default value: 25,0,2147483647,Combat
+field_modulation_stat3,Hardflux Dissipation Rate w/ Active Shields,Double,20,,Default value: 20 - Elite,0,2147483647,Combat
+field_modulation_stat4,Phase Cloak Cooldown Bonus,Double,50,,Default value: 50 - Elite,0,2147483647,Combat
+field_modulation_stat5,Overload Duration Bonus,Double,25,,Default value: 25 - Elite,0,2147483647,Combat
+,,,,,,,,
+point_defense_header,Point Defense Header,Header,Point Defense,,,,,Combat
+point_defense_stat1,Damage to Fighters Bonus,Double,50,,Default value: 50,0,2147483647,Combat
+point_defense_stat2,Damage to Missiles Bonus,Double,50,,Default value: 50,0,2147483647,Combat
+point_defense_stat3,Flat Point Defense Range Bonus,Double,200,,Default value: 200 - Elite,0,2147483647,Combat
+,,,,,,,,
+target_analysis_header,Target Analysis Header,Header,Target Analysis,,,,,Combat
+target_analysis_stat1,Damage to Cruisers Bonus,Double,15,,Default value: 15,0,2147483647,Combat
+target_analysis_stat2,Damage to Capitals Bonus,Double,20,,Default value: 20,0,2147483647,Combat
+target_analysis_stat3,Damage to Frigates Bonus,Double,5,,Default value: 5 - Elite,0,2147483647,Combat
+target_analysis_stat4,Damage to Destroyers Bonus,Double,10,,Default value: 10 - Elite,0,2147483647,Combat
+target_analysis_stat5,Damage to Weapons & Engines Bonus,Double,100,,Default value: 100 - Elite,0,2147483647,Combat
+,,,,,,,,
+ballistic_mastery_header,Ballistic Mastery Header,Header,Ballistic Mastery,,,,,Combat
+ballistic_mastery_stat1,Ballistic Damage Bonus,Double,10,,Default value: 10,0,2147483647,Combat
+ballistic_mastery_stat2,Ballistic Range Bonus,Double,10,,Default value: 10,0,2147483647,Combat
+ballistic_mastery_stat3,Ballistic Damage Bonus,Double,5,,Default value: 5 - Elite,0,2147483647,Combat
+ballistic_mastery_stat4,Ballistic Projectile Speed Bonus,Double,33,,Default value: 33 - Elite,0,2147483647,Combat
+,,,,,,,,
+systems_expertise_header,Systems Expertise Header,Header,Systems Expertise,,,,,Combat
+systems_expertise_stat1,Ship System Charges Bonus,Double,1,,Default value: 1,0,2147483647,Combat
+systems_expertise_stat2,Ship System Regeneration Bonus,Double,50,,Default value: 50,0,2147483647,Combat
+systems_expertise_stat3,Ship System Range Bonus,Double,50,,Default value: 50,0,2147483647,Combat
+systems_expertise_stat4,Ship System Cooldown Bonus,Double,33,,Default value: 33,0,2147483647,Combat
+systems_expertise_stat5,Damage Reduction Bonus,Double,10,,Default value: 10 - Elite - WARNING: values above 95 will make enemy AI not target this ship,0,2147483647,Combat
+,,,,,,,,
+missile_specialization_header,Missile Specialization Header,Header,Missile Specialization,,,,,Combat
+missile_specialization_stat1,Missile Weapons Ammo Capacity Bonus,Double,100,,Default value: 100,0,2147483647,Combat
+missile_specialization_stat2,Missiles Maximum Health Bonus,Double,25,,Default value: 25,0,2147483647,Combat
+missile_specialization_stat3,Missile Weapons Rate of Fire Bonus,Double,25,,Default value: 25 - Elite,0,2147483647,Combat
+missile_specialization_stat4,Missile Weapons Ammo Regeneration Rate Bonus,Double,25,,Default value: 25 - Elite,0,2147483647,Combat
+missile_specialization_stat5,Missile Damage Dealt Bonus,Double,10,,Default value: 10 - Elite,0,2147483647,Combat
+,,,,,,,,
