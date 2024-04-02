@@ -1,9 +1,19 @@
 fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
 #GENERAL MODIFIABLE STATS,,,,,,,,
+general_header,General Stats Header,Header,General Stats,,,,,
 ordnance_point_threshold,Ordnance Point Threshold,Double,240,,Default value: 240,0,2147483647,
 fighter_bay_threshold,Fighter Bay Threshold,Double,8,,Default value: 8,0,2147483647,
 phase_ordnance_point_threshold,Phase Ordnance Point Threshold,Double,40,,Default value: 40,0,2147483647,
-automated_points_threshold,Automated Points Threshold,Double,120,,Default value: 120,0,2147483647,
+automated_points_threshold,Automated Points Threshold,Double,120,,Default value: 120,0,2147483647	,
+,,,,,,,,
+ai_core_multiplier_header,AI Core Multiplier Header,Header,AI Core Multipliers,,,,,
+beta_ai_stat,Beta AI Core Multiplier for AI Ships,Double,2,,Default value: 2,0,2147483647,
+gamma_ai_stat,Gamma AI Core Multiplier for AI Ships,Double,3,,Default value: 3,0,2147483647	,
+alpha_ai_stat,Alpha AI Core Multiplier for AI Ships,Double,4,,Default value: 4,0,2147483647	,
+omega_ai_stat,Omega AI Core Multiplier for AI Ships,Double,5,,Default value: 5,0,2147483647	,
+,,,,,,,,
+d_mod_stats_header,D-Mod Stats Header,Header,D-Mod Stats,,,,,
+max_dmods_attainable_stat,Max D-Mods Obtainable from Combat,Int,5,,Default value: 5,0,2147483647	,
 ,,,,,,,,
 #COMBAT SKILL TREE,,,,,,,,
 helmsmanship_header,Helmsmanship Header,Header,Helmsmanship,,,,,Combat
@@ -12,7 +22,7 @@ helmsmanship_stat2,Top Speed Bonus,Double,15,,Default value: 15,0,2147483647,Com
 helmsmanship_stat3,Flat Top Speed Bonus,Double,10,,Default value: 10 - Elite,0,2147483647,Combat
 ,,,,,,,,
 combat_endurance_header,Combat Endurance Header,Header,Combat Endurance,,,,,Combat
-combat_endurance_stat1,Peak Operating Time Bonus,Double,60,,Default value: 60,0,2147483647,Combat
+combat_endurance_stat1,Flat Peak Operating Time Bonus,Double,60,,Default value: 60,0,2147483647,Combat
 combat_endurance_stat2,Combat Readiness Degredation Rate Bonus,Double,25,,Default value: 25,0,2147483647,Combat
 combat_endurance_stat3,Maximum Combat Readiness Bonus,Double,15,,Default value: 15,0,2147483647,Combat
 combat_endurance_stat4,Hull Regeneration Rate Per Second,Double,0.5,,Default value: 0.5 - Elite,0.0000000001,2147483647,Combat
@@ -26,7 +36,7 @@ impact_mitigation_stat3,Capital & Cruiser Maneuverability Bonus,Double,50,,Defau
 impact_mitigation_stat4,Frigate & Destroyer Maneuverability Bonus,Double,25,,Default value: 25,0,2147483647,Combat
 ,,,,,,,,
 damage_control_header,Damage Control Header,Header,Damage Control,,,,,Combat
-damage_control_stat1,Hull Damage Taken Reduction Bonus,Double,25,,Default value: 25 - WARNING: values above 95 will make enemy AI not target this ship,0,2147483647,Combat
+damage_control_stat1,Hull Damage Taken Reduction Bonus,Double,25,,Default value: 25 - WARNING: values above 99 will make enemy AI not target this ship,0,2147483647,Combat
 damage_control_stat2,Crew Lost Reduction Bonus,Double,50,,Default value: 50,0,2147483647,Combat
 damage_control_stat3,Weapon & Engine Repair Rate Bonus,Double,50,,Default value: 50,0,2147483647,Combat
 ,,,,,,,,
@@ -56,11 +66,11 @@ ballistic_mastery_stat3,Ballistic Damage Bonus,Double,5,,Default value: 5 - Elit
 ballistic_mastery_stat4,Ballistic Projectile Speed Bonus,Double,33,,Default value: 33 - Elite,0,2147483647,Combat
 ,,,,,,,,
 systems_expertise_header,Systems Expertise Header,Header,Systems Expertise,,,,,Combat
-systems_expertise_stat1,Ship System Charges Bonus,Double,1,,Default value: 1,0,2147483647,Combat
+systems_expertise_stat1,Ship System Flat Charges Bonus,Double,1,,Default value: 1,0,2147483647,Combat
 systems_expertise_stat2,Ship System Regeneration Bonus,Double,50,,Default value: 50,0,2147483647,Combat
 systems_expertise_stat3,Ship System Range Bonus,Double,50,,Default value: 50,0,2147483647,Combat
 systems_expertise_stat4,Ship System Cooldown Bonus,Double,33,,Default value: 33,0,2147483647,Combat
-systems_expertise_stat5,Damage Reduction Bonus,Double,10,,Default value: 10 - Elite - WARNING: values above 95 will make enemy AI not target this ship,0,2147483647,Combat
+systems_expertise_stat5,Damage Reduction Bonus,Double,10,,Default value: 10 - Elite - WARNING: values above 99 will make enemy AI not target this ship,0,2147483647,Combat
 ,,,,,,,,
 missile_specialization_header,Missile Specialization Header,Header,Missile Specialization,,,,,Combat
 missile_specialization_stat1,Missile Weapons Ammo Capacity Bonus,Double,100,,Default value: 100,0,2147483647,Combat
@@ -104,7 +114,7 @@ carrier_group_stat4,Officer Stat Multiplier for Stats Modified,Double,1.5,,Defau
 officer_training_header,Officer Training Header,Header,Officer Training,,,,,Leadership
 officer_training_stat1,Maximum Level of Officer Under Your Command Bonus,Double,1,,Default value: 1,0,2147483647,Leadership
 officer_training_stat2,Maximum Number of Elite Skill for Officers Under Your Command Bonus,Double,1,,Default value: 1,0,2147483647,Leadership
-officer_training_stat3,Command Point Bonus,Double,2,,Default value: 2,0,2147483647,Leadership
+officer_training_stat3,Flat Command Point Bonus,Double,2,,Default value: 2,0,2147483647,Leadership
 ,,,,,,,,
 officer_management_header,Officer Management Header,Header,Officer Management,,,,,Leadership
 officer_management_stat1,Maximum Officers You Are Able to Command Bonus,Double,2,,Default value: 2,0,2147483647,Leadership
@@ -225,4 +235,4 @@ hull_restoration_stat6,Combat Readiness Reduction Penalty Per D-Mod,Double,5,,De
 ,,,,,,,,
 derelict_operations_header,Derelict Operations Header,Header,Derelict Operations,,,,,Industry
 derelict_operations_stat1,Deployment Point Reduction Bonus Per D-Mod ,Double,6,,Default value: 6,0,2147483647,Industry
-,,,,,,,,
+derelict_operations_stat2,Max Amount of D-Mods for DP Reduction Bonus to Take Effect,Double,5,,Default value: 5,0,2147483647,Industry

@@ -1,6 +1,8 @@
 package fullyadjustableskills;
 
 import com.fs.starfarer.api.Global;
+import com.fs.starfarer.api.impl.campaign.AICoreOfficerPluginImpl;
+import com.fs.starfarer.api.impl.campaign.DModManager;
 import com.fs.starfarer.api.impl.campaign.skills.*;
 import fullyadjustableskills.skills.*;
 import lunalib.lunaSettings.LunaSettings;
@@ -15,6 +17,13 @@ public class Utils {
         BaseSkillEffectDescription.FIGHTER_BAYS_THRESHOLD = getSettingsFloat("fighter_bay_threshold");
         BaseSkillEffectDescription.PHASE_OP_THRESHOLD = getSettingsFloat("phase_ordnance_point_threshold");
         BaseSkillEffectDescription.AUTOMATED_POINTS_THRESHOLD = getSettingsFloat("automated_points_threshold");
+
+        AICoreOfficerPluginImpl.BETA_MULT = getSettingsFloat("beta_ai_stat");
+        AICoreOfficerPluginImpl.GAMMA_MULT = getSettingsFloat("gamma_ai_stat");
+        AICoreOfficerPluginImpl.ALPHA_MULT = getSettingsFloat("alpha_ai_stat");
+        AICoreOfficerPluginImpl.OMEGA_MULT = getSettingsFloat("omega_ai_stat");
+
+        DModManager.MAX_DMODS_FROM_COMBAT = getSettingsInt("max_dmods_attainable_stat");
 
         /* COMBAT SKILL TREE STATS */
         Helmsmanship.MANEUVERABILITY_BONUS = getSettingsFloat("helmsmanship_stat1");
@@ -197,6 +206,7 @@ public class Utils {
         HullRestoration.CR_MINUS_PER_DMOD = getSettingsFloat("hull_restoration_stat6");
 
         DerelictContingent.MINUS_DP_PERCENT_PER_DMOD = getSettingsFloat("derelict_operations_stat1");
+        DerelictContingent.MAX_DMODS = getSettingsFloat("derelict_operations_stat2");
     }
 
     public static float getSettingsFloat(String fieldId) {
