@@ -1,0 +1,12 @@
+{
+    "masterVersionFile": "https://raw.githubusercontent.com/AudaxLudos/fully-adustable-skills/main/FullyAdjustableSkills.version",
+    "modName": "Adjustable S-Mods",
+    "modVersion": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+    },
+    "modThreadId": 0,
+    "directDownloadURL": "https://github.com/AudaxLudos/fully-adjustable-skills/releases",
+    "changelogURL": "https://raw.githubusercontent.com/AudaxLudos/fully-adjustable-skills/main/CHANGELOG.txt"
+}
