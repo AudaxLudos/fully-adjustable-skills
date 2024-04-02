@@ -5,14 +5,24 @@
     "version": "1.0.0",
     "description": "A mod for starsector that allows the player to adjust vanilla skill thresholds to whatever they desire.",
     "gameVersion": "0.97a",
+    "jars": [
+        "FullyAdjustableSkills.jar"
+    ],
+    "modPlugin": "fullyadjustableskills.ModPlugin",
     "dependencies": [
         {
             "id": "lunalib",
             "name": "LunaLib"
         }
     ],
-    "jars": [
-        "FullyAdjustableSkills.jar"
-    ],
-    "modPlugin": "fullyadjustableskills.ModPlugin"
+    "replace": [
+        "data/characters/skills/energy_weapon_mastery.skill",
+        "data/characters/skills/field_repairs.skill",
+        "data/characters/skills/makeshift_equipment.skill",
+        "data/characters/skills/missile_specialization.skill",
+        "data/characters/skills/officer_training.skill",
+        "data/characters/skills/polarized_armor.skill",
+        "data/characters/skills/salvaging.skill",
+        "data/characters/skills/tactical_drills.skill"
+    ]
 }

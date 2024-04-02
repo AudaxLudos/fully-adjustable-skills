@@ -5,8 +5,6 @@ fighter_bay_threshold,Fighter Bay Threshold,Double,8,,Default value: 8,0,2147483
 phase_ordnance_point_threshold,Phase Ordnance Point Threshold,Double,40,,Default value: 40,0,2147483647,
 automated_points_threshold,Automated Points Threshold,Double,120,,Default value: 120,0,2147483647,
 ,,,,,,,,
-,,,,,,,,
-,,,,,,,,
 #COMBAT SKILL TREE,,,,,,,,
 helmsmanship_header,Helmsmanship Header,Header,Helmsmanship,,,,,Combat
 helmsmanship_stat1,Maneuverability Bonus,Double,50,,Default value: 50,0,2147483647,Combat

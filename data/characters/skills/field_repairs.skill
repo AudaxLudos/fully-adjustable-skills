@@ -1,0 +1,18 @@
+{
+	"id":"field_repairs",
+	"governingAptitude":"industry",
+	"compressHullmods":false,
+	"scope":"FLEET",
+	"effectGroups":[
+		{
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"CHARACTER_STATS", "script":"fullyadjustableskills.skills.FASFieldRepairs$Level1"},
+				{"type":"ALL_SHIPS_IN_FLEET", "script":"fullyadjustableskills.skills.FASFieldRepairs$Level2"},
+				{"type":"FLEET", "script":"fullyadjustableskills.skills.FASFieldRepairs$Level5A"},
+				{"type":"FLEET", "script":"fullyadjustableskills.skills.FASFieldRepairs$Level5B"},
+			]
+		},
+	],
+}

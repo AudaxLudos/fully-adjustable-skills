@@ -1,6 +1,7 @@
 package fullyadjustableskills;
 
 import com.fs.starfarer.api.impl.campaign.skills.*;
+import fullyadjustableskills.skills.*;
 import lunalib.lunaSettings.LunaSettings;
 import lunalib.lunaSettings.LunaSettingsListener;
 
@@ -61,17 +62,16 @@ public class FASLunaSettingsListener implements LunaSettingsListener {
         SystemsExpertise.SYSTEM_COOLDOWN_REDUCTION_PERCENT = getSettingsFloat(modId, "systems_expertise_stat4");
         SystemsExpertise.ELITE_DAMAGE_REDUCTION = getSettingsFloat(modId, "systems_expertise_stat5");
 
-        // Missile Specialization vanilla values has final attribute
-        // MissileSpecialization.MISSILE_AMMO_BONUS = getSettingsFloat(modId, "missile_specialization_stat1");
-        // MissileSpecialization.MISSILE_SPEC_PERK_HEALTH_BONUS = getSettingsFloat(modId, "missile_specialization_stat2");
-        // MissileSpecialization.MISSILE_SPEC_ROF_BONUS = getSettingsFloat(modId, "missile_specialization_stat3");
-        // MissileSpecialization.MISSILE_SPEC_AMMO_REGEN_BONUS = getSettingsFloat(modId, "missile_specialization_stat4");
-        // MissileSpecialization.MISSILE_SPEC_DAMAGE_BONUS = getSettingsFloat(modId, "missile_specialization_stat5");
+        FASMissileSpecialization.MISSILE_AMMO_BONUS = getSettingsFloat(modId, "missile_specialization_stat1");
+        FASMissileSpecialization.MISSILE_SPEC_PERK_HEALTH_BONUS = getSettingsFloat(modId, "missile_specialization_stat2");
+        FASMissileSpecialization.MISSILE_SPEC_ROF_BONUS = getSettingsFloat(modId, "missile_specialization_stat3");
+        FASMissileSpecialization.MISSILE_SPEC_AMMO_REGEN_BONUS = getSettingsFloat(modId, "missile_specialization_stat4");
+        FASMissileSpecialization.MISSILE_SPEC_DAMAGE_BONUS = getSettingsFloat(modId, "missile_specialization_stat5");
 
         // FLEET SKILL TREE
         TacticalDrills.DAMAGE_PERCENT = getSettingsFloat(modId, "tactical_drills_stat1");
         TacticalDrills.ATTACK_BONUS = getSettingsInt(modId, "tactical_drills_stat2");
-        TacticalDrills.CASUALTIES_MULT = getSettingsFloat(modId, "tactical_drills_stat3") / 100f;
+        FASTacticalDrills.CASUALTIES_MULT = getSettingsFloat(modId, "tactical_drills_stat3") / 100f;
 
         CoordinatedManeuvers.NAV_FRIGATES = getSettingsFloat(modId, "coordinated_maneuvers_stat1");
         CoordinatedManeuvers.NAV_DESTROYERS = getSettingsFloat(modId, "coordinated_maneuvers_stat2");
@@ -94,10 +94,9 @@ public class FASLunaSettingsListener implements LunaSettingsListener {
         FighterUplink.TARGET_LEADING_BONUS = getSettingsFloat(modId, "fighter_uplink_stat3");
         FighterUplink.OFFICER_MULT = getSettingsFloat(modId, "fighter_uplink_stat4");
 
-        // Officer Training vanilla values has final attribute
-        // OfficerTraining.MAX_LEVEL_BONUS = getSettingsFloat(modId, "officer_training_stat1");
-        // OfficerTraining.MAX_ELITE_SKILLS_BONUS = getSettingsFloat(modId, "officer_training_stat2");
-        // OfficerTraining.CP_BONUS = getSettingsFloat(modId, "officer_training_stat3");
+        FASOfficerTraining.MAX_LEVEL_BONUS = getSettingsFloat(modId, "officer_training_stat1");
+        FASOfficerTraining.MAX_ELITE_SKILLS_BONUS = getSettingsFloat(modId, "officer_training_stat2");
+        FASOfficerTraining.CP_BONUS = getSettingsFloat(modId, "officer_training_stat3");
 
         OfficerManagement.NUM_OFFICERS_BONUS = getSettingsFloat(modId, "officer_management_stat1");
         OfficerManagement.CP_BONUS = getSettingsFloat(modId, "officer_management_stat2");
@@ -128,7 +127,7 @@ public class FASLunaSettingsListener implements LunaSettingsListener {
         EnergyWeaponMastery.ENERGY_DAMAGE_PERCENT = getSettingsFloat(modId, "energy_weapon_mastery_stat1");
         EnergyWeaponMastery.MIN_RANGE = getSettingsFloat(modId, "energy_weapon_mastery_stat2");
         EnergyWeaponMastery.MAX_RANGE = getSettingsFloat(modId, "energy_weapon_mastery_stat3");
-        EnergyWeaponMastery.FLUX_COST_MULT = getSettingsFloat(modId, "energy_weapon_mastery_stat4") / 100f;
+        FASEnergyWeaponMastery.FLUX_COST_MULT = getSettingsFloat(modId, "energy_weapon_mastery_stat4") / 100f;
 
         ElectronicWarfare.PER_SHIP_BONUS = getSettingsFloat(modId, "electronic_warfare_stat1");
 
@@ -158,23 +157,20 @@ public class FASLunaSettingsListener implements LunaSettingsListener {
         BulkTransport.BURN_BONUS = getSettingsFloat(modId, "bulk_transport_stat7");
 
         Salvaging.SALVAGE_BONUS = getSettingsFloat(modId, "salvaging_stat1");
-        // Salvaging vanilla combat salvage value has final attribute
-        // Salvaging.COMBAT_SALVAGE = getSettingsFloat(modId, "salvaging_stat2");
+        FASSalvaging.COMBAT_SALVAGE = getSettingsFloat(modId, "salvaging_stat2");
         Salvaging.CREW_LOSS_REDUCTION = getSettingsFloat(modId, "salvaging_stat3");
 
-        // Field Repairs vanilla values has final attribute
-        // FieldRepairs.REPAIR_RATE_BONUS = getSettingsFloat(modId, "field_repairs_stat1");
-        // FieldRepairs.INSTA_REPAIR_PERCENT = getSettingsFloat(modId, "field_repairs_stat2");
-        // FieldRepairs.MIN_HULL = getSettingsFloat(modId, "field_repairs_stat3");
-        // FieldRepairs.MAX_HULL = getSettingsFloat(modId, "field_repairs_stat4");
-        // FieldRepairs.MIN_CR = getSettingsFloat(modId, "field_repairs_stat5");
-        // FieldRepairs.MAX_CR = getSettingsFloat(modId, "field_repairs_stat6");
+        FASFieldRepairs.REPAIR_RATE_BONUS = getSettingsFloat(modId, "field_repairs_stat1");
+        FASFieldRepairs.INSTA_REPAIR_PERCENT = getSettingsFloat(modId, "field_repairs_stat2");
+        FASFieldRepairs.MIN_HULL = getSettingsFloat(modId, "field_repairs_stat3");
+        FASFieldRepairs.MAX_HULL = getSettingsFloat(modId, "field_repairs_stat4");
+        FASFieldRepairs.MIN_CR = getSettingsFloat(modId, "field_repairs_stat5");
+        FASFieldRepairs.MAX_CR = getSettingsFloat(modId, "field_repairs_stat6");
 
         OrdnanceExpertise.FLUX_PER_OP = getSettingsFloat(modId, "ordnance_expertise_stat1");
         OrdnanceExpertise.CAP_PER_OP = getSettingsFloat(modId, "ordnance_expertise_stat2");
 
-        // Polarized Armor vanilla max armor damage reduction bonus value is hardcoded
-        // PolarizedArmor.MAX_ARMOR_DAMAGE_REDUCTION_BONUS = getSettingsFloat(modId, "polarized_armor_stat1");
+        FASPolarizedArmor.MAX_ARMOR_DAMAGE_REDUCTION_BONUS = getSettingsFloat(modId, "polarized_armor_stat1");
         PolarizedArmor.EFFECTIVE_ARMOR_BONUS = getSettingsFloat(modId, "polarized_armor_stat2");
         PolarizedArmor.EMP_BONUS_PERCENT = getSettingsFloat(modId, "polarized_armor_stat3");
         PolarizedArmor.VENT_RATE_BONUS = getSettingsFloat(modId, "polarized_armor_stat4");
@@ -186,7 +182,7 @@ public class FASLunaSettingsListener implements LunaSettingsListener {
 
         MakeshiftEquipment.SUPPLY_USE_REDUCTION_MAX_PERCENT = getSettingsFloat(modId, "makeshift_equipment_stat1");
         MakeshiftEquipment.SUPPLY_USE_REDUCTION_MAX_UNITS = getSettingsFloat(modId, "makeshift_equipment_stat2");
-        MakeshiftEquipment.SURVEY_COST_MULT = getSettingsFloat(modId, "makeshift_equipment_stat3") / 100f;
+        FASMakeshiftEquipment.SURVEY_COST_MULT = getSettingsFloat(modId, "makeshift_equipment_stat3") / 100f;
 
         IndustrialPlanning.SUPPLY_BONUS = getSettingsInt(modId, "industrial_planning_stat1");
         IndustrialPlanning.CUSTOM_PRODUCTION_BONUS = getSettingsFloat(modId, "industrial_planning_stat2");

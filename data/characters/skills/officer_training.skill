@@ -1,0 +1,24 @@
+{
+	"id":"officer_training",
+	"governingAptitude":"leadership",
+	"compressHullmods":false,
+	"scope":"FLEET",
+	#"permanent":true,
+	"effectGroups":[
+		{
+			"requiredSkillLevel":0,
+			"effects":[
+				{"type":"DESCRIPTION", "script":"fullyadjustableskills.skills.FASOfficerTraining$Level0"},
+			]
+		},
+		{
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"CHARACTER_STATS", "script":"fullyadjustableskills.skills.FASOfficerTraining$Level1"},
+				{"type":"CHARACTER_STATS", "script":"fullyadjustableskills.skills.FASOfficerTraining$Level2"},
+				{"type":"CHARACTER_STATS", "script":"fullyadjustableskills.skills.FASOfficerTraining$Level3"},
+			]
+		},
+	],
+}
