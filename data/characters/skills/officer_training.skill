@@ -18,6 +18,7 @@
 				{"type":"CHARACTER_STATS", "script":"fullyadjustableskills.skills.FASOfficerTraining$Level1"},
 				{"type":"CHARACTER_STATS", "script":"fullyadjustableskills.skills.FASOfficerTraining$Level2"},
 				{"type":"CHARACTER_STATS", "script":"fullyadjustableskills.skills.FASOfficerTraining$Level3"},
+				{"type":"CHARACTER_STATS", "script":"fullyadjustableskills.skills.FASNexSkills$AgentBonus"},
 			]
 		},
 	],
