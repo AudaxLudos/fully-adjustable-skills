@@ -23,6 +23,7 @@
         "data/characters/skills/officer_training.skill",
         "data/characters/skills/polarized_armor.skill",
         "data/characters/skills/salvaging.skill",
+        "data/characters/skills/systems_expertise.skill",
         "data/characters/skills/tactical_drills.skill"
     ]
 }
