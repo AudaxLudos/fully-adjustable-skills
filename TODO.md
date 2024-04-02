@@ -7,4 +7,4 @@
 - [x] Replace polarized armor stat to not be hardcoded
 - [x] Replace field repairs stat modifiers to be modifiable
 - [x] Change salvaging stat COMBAT_SALVAGE to be modifiable
-- [ ] Change system expertise description value calculations to match modifier
+- [x] Change system expertise description value calculations to match modifier

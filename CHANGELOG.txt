@@ -1,2 +1,15 @@
+### 1.0.0
+- Release 1.0.0
+- Add version checker files
+- Add more modifiable general stats
+- Fix systems expertise description not showing proper values
+- Fix nexerelin additional agent skill bonus not showing up
+- Fix UI and implementation issues
+- Add UI and implementation for adjusting general skills stats
+- Add UI and implementation for adjusting industrial skills stats
+- Add UI and implementation for adjusting leadership skills stats
+- Add UI and implementation for adjusting technology skills stats
+- Add UI and implementation for adjusting combat skills stats
+
 ### 0.0.1
 - Add initial mod files
