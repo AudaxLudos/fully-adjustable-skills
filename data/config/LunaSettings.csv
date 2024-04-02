@@ -1,4 +1,5 @@
 fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
+combat_skill_tree_header,Combat Skill Tree Header,Header,Combat Skill Tree,,,,,Combat
 helmsmanship_header,Helmsmanship Header,Header,Helmsmanship,,,,,Combat
 helmsmanship_stat1,Maneuverability Bonus,Double,50,,Default value: 50,0,2147483647,Combat
 helmsmanship_stat2,Top Speed Bonus,Double,15,,Default value: 15,0,2147483647,Combat
@@ -61,4 +62,143 @@ missile_specialization_stat2,Missiles Maximum Health Bonus,Double,25,,Default va
 missile_specialization_stat3,Missile Weapons Rate of Fire Bonus,Double,25,,Default value: 25 - Elite,0,2147483647,Combat
 missile_specialization_stat4,Missile Weapons Ammo Regeneration Rate Bonus,Double,25,,Default value: 25 - Elite,0,2147483647,Combat
 missile_specialization_stat5,Missile Damage Dealt Bonus,Double,10,,Default value: 10 - Elite,0,2147483647,Combat
+,,,,,,,,
+leadership_skill_tree_header,Leadership Skill Tree Header,Header,Leadership Skill Tree,,,,,Leadership
+tactical_drills_header,Tactical Drills Header,Header,Tactical Drills,,,,,Leadership
+tactical_drills_stat1,Damage Dealt Bonus for Combat Ships,Double,5,,Default value: 5,0,2147483647,Leadership
+tactical_drills_stat2,Planetary Operations Effectiveness Bonus,Int,50,,Default value: 50,0,2147483647,Leadership
+tactical_drills_stat3,Planetary Operations Casualty Reduction Bonus,Double,25,,Default value: 25,0,2147483647,Leadership
+,,,,,,,,
+coordinated_maneuvers_header,Coordinated Maneuvers Header,Header,Coordinated Maneuvers,,,,,Leadership
+coordinated_maneuvers_stat1,Nav Rating Bonus for Deployed Frigates,Double,6,,Default value: 6,0,2147483647,Leadership
+coordinated_maneuvers_stat2,Nav Rating Bonus for Deployed Destroyers,Double,3,,Default value: 3,0,2147483647,Leadership
+coordinated_maneuvers_stat3,Nav Rating Bonus for Deployed Capital & Cruisers,Double,1,,Default value: 1,0,2147483647,Leadership
+coordinated_maneuvers_stat4,Command Point Recovery Rate Bonus for Deployed Frigates,Double,50,,Default value: 50,0,2147483647,Leadership
+coordinated_maneuvers_stat5,Command Point Recovery Rate Bonus for Deployed Destroyers,Double,25,,Default value: 25,0,2147483647,Leadership
+,,,,,,,,
+wolfpack_tactics_header,Wolfpack Tactics Header,Header,Wolfpack Tactics,,,,,Leadership
+wolfpack_tactics_stat1,Damage Bonus to Ships Larger than Frigates if Frigate,Double,20,,Default value: 20,0,2147483647,Leadership
+wolfpack_tactics_stat2,Damage Bonus to Ships Larger than Destroyers if Destroyer,Double,10,,Default value: 10,0,2147483647,Leadership
+wolfpack_tactics_stat3,Peak Operating Time Bonus if Frigate,Double,50,,Default value: 50,0,2147483647,Leadership
+wolfpack_tactics_stat4,Peak Operating Time Bonus if Destroyer,Double,25,,Default value: 25,0,2147483647,Leadership
+,,,,,,,,
+crew_training_header,Crew Training Header,Header,Crew Training,,,,,Leadership
+crew_training_stat1,Combat Readiness Bonus for Combat Ships,Double,15,,Default value: 15,0,2147483647,Leadership
+,,,,,,,,
+carrier_group_header,Carrier Group Header,Header,Carrier Group,,,,,Leadership
+carrier_group_stat1,Fighter Replacement Rate Bonus,Double,50,,Default value: 50,0,2147483647,Leadership
+,,,,,,,,
+fighter_uplink_header,Fighter Uplink Header,Header,Fighter Uplink,,,,,Leadership
+fighter_uplink_stat1,Crew Loss Reduction Bonus Due to Fighter Losses in Combat,Double,50,,Default value: 50,0,2147483647,Leadership
+fighter_uplink_stat2,Fighter Top Speed Bonus,Double,20,,Default value: 20,0,2147483647,Leadership
+fighter_uplink_stat3,Fighter Target Leading Accuracy Bonus,Double,50,,Default value: 50,0,2147483647,Leadership
+,,,,,,,,
+officer_training_header,Officer Training Header,Header,Officer Training,,,,,Leadership
+officer_training_stat1,Maximum Level of Officer Under Your Command Bonus,Double,1,,Default value: 1,0,2147483647,Leadership
+officer_training_stat2,Maximum Number of Elite Skill for Officers Under Your Command Bonus,Double,1,,Default value: 1,0,2147483647,Leadership
+officer_training_stat3,Command Point Bonus,Double,2,,Default value: 2,0,2147483647,Leadership
+,,,,,,,,
+officer_management_header,Officer Management Header,Header,Officer Management,,,,,Leadership
+officer_management_stat1,Maximum Officers You Are Able to Command Bonus,Double,2,,Default value: 2,0,2147483647,Leadership
+officer_management_stat2,Command Point Bonus,Double,2,,Default value: 2,0,2147483647,Leadership
+,,,,,,,,
+best_of_the_best_header,Best Of The Best Header,Header,Best Of The Best,,,,,Leadership
+best_of_the_best_stat1,Able to Build More Permanent Hullmods Into Ships,Int,1,,Default value: 1,0,2147483647,Leadership
+best_of_the_best_stat2,Deployement Point Bonus is at Least a Percentage of Battle Size,Double,10,,Default value: 10,0,2147483647,Leadership
+,,,,,,,,
+support_doctrine_header,Support Doctrine Header,Header,Support Doctrine,,,,,Leadership
+support_doctrine_stat1,Deployment Points Cost Reduction Percent Bonus,Double,20,,Default value: 20,0,2147483647,Leadership
+support_doctrine_stat2,Deployment Points Cost Reduction Flat Bonus,Double,10,,Default value: 10,0,2147483647,Leadership
+support_doctrine_stat3,Command Point Regeneration Rate Bonus,Double,100,,Default value: 100,0,2147483647,Leadership
+,,,,,,,,
+technology_skill_tree_header,Technology Skill Tree Header,Header,Technology Skill Tree,,,,,Technology
+navigation_header,Navigation Header,Header,Navigation,,,,,Technology
+navigation_stat1,Terrain Movement Penalty Reduction Bonus,Double,30,,Default value: 30,0,2147483647,Technology
+navigation_stat2,Maximum Burn Level Bonus,Double,1,,Default value: 1,0,2147483647,Technology
+navigation_stat3,Maxmimum Sustained Burn Level Bonus,Double,1,,Default value: 1,0,2147483647,Technology
+,,,,,,,,
+sensors_header,Sensors Header,Header,Sensors,,,,,Technology
+sensors_stat1,Detectable Range Reduction Bonus,Double,25,,Default value: 25,0,2147483647,Technology
+sensors_stat2,Maximum Sensor Range Bonus,Double,25,,Default value: 25,0,2147483647,Technology
+sensors_stat3,Additional Burn Level Bonus When Fleet is Considered Moving Slowly,Double,3,,Default value: 3,0,2147483647,Technology
+,,,,,,,,
+gunnery_implants_header,Gunnery Implants Header,Header,Gunnery Implants,,,,,Technology
+gunnery_implants_stat1,Target Leading Accuracy Bonus for Autofiring Weapons,Double,100,,Default value: 100,0,2147483647,Technology
+gunnery_implants_stat2,Ballistic & Energy Weapon Range Bonus,Double,15,,Default value: 15,0,2147483647,Technology
+gunnery_implants_stat3,Weapon Recoil Reduction Bonus,Double,25,,Default value: 25,0,2147483647,Technology
+gunnery_implants_stat4,ECM Rating Bonus when Piloting Frigates,Double,4,,Default value: 4,0,2147483647,Technology
+gunnery_implants_stat5,ECM Rating Bonus when Piloting Destroyers,Double,2,,Default value: 2,0,2147483647,Technology
+gunnery_implants_stat6,ECM Rating Bonus when Piloting Capitals & Cruisers,Double,1,,Default value: 1 - Elite,0,2147483647,Technology
+,,,,,,,,
+energy_weapon_mastery_header,Energy Weapon Mastery Header,Header,Energy Weapon Mastery,,,,,Technology
+energy_weapon_mastery_stat1,Additional Energy Damage Bonus When in Close Range,Double,30,,Default value: 30,0,2147483647,Technology
+energy_weapon_mastery_stat2,Additional Energy Damage Minimum Range for Maximum Effect,Double,600,,Default value: 600,0,2147483647,Technology
+energy_weapon_mastery_stat3,Additional Energy Damage Maximum Range for Minimum Effect,Double,1000,,Default value: 1000,0,2147483647,Technology
+energy_weapon_mastery_stat4,Flux Generated Reduction Bonus by Energy Weapons,Double,10,,Default value: 10 - Elite,0,2147483647,Technology
+,,,,,,,,
+electronic_warfare_header,Electronic Warfare Header,Header,Electronic Warfare,,,,,Technology
+electronic_warfare_stat1,Additional ECM Rating Bonus for Each Deployed Ship,Double,1,,Default value: 1,0,2147483647,Technology
+,,,,,,,,
+flux_regulation_header,Flux Regulation Header,Header,Flux Regulation,,,,,Technology
+flux_regulation_stat1,Maximum Flux Capacitors Bonus,Int,5,,Default value: 5,0,2147483647,Technology
+flux_regulation_stat2,Maximum Flux Vents Bonus,Int,5,,Default value: 5,0,2147483647,Technology
+flux_regulation_stat3,Flux Dissipation Bonus for Combat Ships,Double,10,,Default value: 10,0,2147483647,Technology
+flux_regulation_stat4,Flux Capacity Bonus for Combat Ships,Double,10,,Default value: 10,0,2147483647,Technology
+,,,,,,,,
+phase_coil_tuning_header,Phase Coil Tuning Header,Header,Phase Coil Tuning,,,,,Technology
+phase_coil_tuning_stat1,Flat Peak Performance Time Bonus,Double,180,,Default value: 180,0,2147483647,Technology
+phase_coil_tuning_stat2,Max Speed & Acceleration Bonus While Phase Cloak is Active ,Double,50,,Default value: 50,0,2147483647,Technology
+phase_coil_tuning_stat3,Sensor Strength Bonus for Phase Ships,Double,100,,Default value: 100,0,2147483647,Technology
+,,,,,,,,
+neural_link_header,Neural Link Header,Header,Neural Link - No Modifiable Stat,,,,,Technology
+,,,,,,,,
+cybernetic_augmentation_header,Cybernetic Augmentation Header,Header,Cybernetic Augmentation,,,,,Technology
+cybernetic_augmentation_stat1,Maximum Number of Elite Skills for Commanded Officers,Double,1,,Default value: 1,0,2147483647,Technology
+cybernetic_augmentation_stat2,Damage Dealt & Damage Reduction Bonus for Each Elite Skill the Player Has,Double,1,,Default value: 1,0,2147483647,Technology
+,,,,,,,,
+automated_ships_header,Automated Ships Header,Header,Automated Ships,,,,,Technology
+automated_ships_stat1,Max Combat Readiness Bonus,Double,100,,Default value: 100,0,2147483647,Technology
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
 ,,,,,,,,
