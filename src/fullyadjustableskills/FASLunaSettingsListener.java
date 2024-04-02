@@ -7,6 +7,12 @@ import lunalib.lunaSettings.LunaSettingsListener;
 public class FASLunaSettingsListener implements LunaSettingsListener {
     @Override
     public void settingsChanged(String modId) {
+        // GENERAL MODIFIABLE STATS
+        BaseSkillEffectDescription.OP_THRESHOLD = getSettingsFloat(modId, "ordnance_point_threshold");
+        BaseSkillEffectDescription.FIGHTER_BAYS_THRESHOLD = getSettingsFloat(modId, "fighter_bay_threshold");
+        BaseSkillEffectDescription.PHASE_OP_THRESHOLD = getSettingsFloat(modId, "phase_ordnance_point_threshold");
+        BaseSkillEffectDescription.AUTOMATED_POINTS_THRESHOLD = getSettingsFloat(modId, "automated_points_threshold");
+
         // COMBAT SKILL TREE
         Helmsmanship.MANEUVERABILITY_BONUS = getSettingsFloat(modId, "helmsmanship_stat1");
         Helmsmanship.SPEED_BONUS = getSettingsFloat(modId, "helmsmanship_stat2");
@@ -81,10 +87,12 @@ public class FASLunaSettingsListener implements LunaSettingsListener {
         CrewTraining.CR_PERCENT = getSettingsFloat(modId, "crew_training_stat1");
 
         CarrierGroup.REPLACEMENT_RATE_PERCENT = getSettingsFloat(modId, "carrier_group_stat1");
+        CarrierGroup.OFFICER_MULT = getSettingsFloat(modId, "carrier_group_stat2");
 
         FighterUplink.CREW_LOSS_PERCENT = getSettingsFloat(modId, "fighter_uplink_stat1");
         FighterUplink.MAX_SPEED_PERCENT = getSettingsFloat(modId, "fighter_uplink_stat2");
         FighterUplink.TARGET_LEADING_BONUS = getSettingsFloat(modId, "fighter_uplink_stat3");
+        FighterUplink.OFFICER_MULT = getSettingsFloat(modId, "fighter_uplink_stat4");
 
         // Officer Training vanilla values has final attribute
         // OfficerTraining.MAX_LEVEL_BONUS = getSettingsFloat(modId, "officer_training_stat1");
@@ -139,6 +147,58 @@ public class FASLunaSettingsListener implements LunaSettingsListener {
         CyberneticAugmentation.BONUS_PER_ELITE_SKILL = getSettingsFloat(modId, "cybernetic_augmentation_stat2");
 
         AutomatedShips.MAX_CR_BONUS = getSettingsFloat(modId, "automated_ships_stat1");
+
+        // INDUSTRY SKILL TREE
+        BulkTransport.CARGO_CAPACITY_MAX_PERCENT = getSettingsFloat(modId, "bulk_transport_stat1");
+        BulkTransport.CARGO_CAPACITY_THRESHOLD = getSettingsFloat(modId, "bulk_transport_stat2");
+        BulkTransport.FUEL_CAPACITY_MAX_PERCENT = getSettingsFloat(modId, "bulk_transport_stat3");
+        BulkTransport.FUEL_CAPACITY_THRESHOLD = getSettingsFloat(modId, "bulk_transport_stat4");
+        BulkTransport.PERSONNEL_CAPACITY_MAX_PERCENT = getSettingsFloat(modId, "bulk_transport_stat5");
+        BulkTransport.PERSONNEL_CAPACITY_THRESHOLD = getSettingsFloat(modId, "bulk_transport_stat6");
+        BulkTransport.BURN_BONUS = getSettingsFloat(modId, "bulk_transport_stat7");
+
+        Salvaging.SALVAGE_BONUS = getSettingsFloat(modId, "salvaging_stat1");
+        // Salvaging vanilla combat salvage value has final attribute
+        // Salvaging.COMBAT_SALVAGE = getSettingsFloat(modId, "salvaging_stat2");
+        Salvaging.CREW_LOSS_REDUCTION = getSettingsFloat(modId, "salvaging_stat3");
+
+        // Field Repairs vanilla values has final attribute
+        // FieldRepairs.REPAIR_RATE_BONUS = getSettingsFloat(modId, "field_repairs_stat1");
+        // FieldRepairs.INSTA_REPAIR_PERCENT = getSettingsFloat(modId, "field_repairs_stat2");
+        // FieldRepairs.MIN_HULL = getSettingsFloat(modId, "field_repairs_stat3");
+        // FieldRepairs.MAX_HULL = getSettingsFloat(modId, "field_repairs_stat4");
+        // FieldRepairs.MIN_CR = getSettingsFloat(modId, "field_repairs_stat5");
+        // FieldRepairs.MAX_CR = getSettingsFloat(modId, "field_repairs_stat6");
+
+        OrdnanceExpertise.FLUX_PER_OP = getSettingsFloat(modId, "ordnance_expertise_stat1");
+        OrdnanceExpertise.CAP_PER_OP = getSettingsFloat(modId, "ordnance_expertise_stat2");
+
+        // Polarized Armor vanilla max armor damage reduction bonus value is hardcoded
+        // PolarizedArmor.MAX_ARMOR_DAMAGE_REDUCTION_BONUS = getSettingsFloat(modId, "polarized_armor_stat1");
+        PolarizedArmor.EFFECTIVE_ARMOR_BONUS = getSettingsFloat(modId, "polarized_armor_stat2");
+        PolarizedArmor.EMP_BONUS_PERCENT = getSettingsFloat(modId, "polarized_armor_stat3");
+        PolarizedArmor.VENT_RATE_BONUS = getSettingsFloat(modId, "polarized_armor_stat4");
+
+        ContainmentProcedures.CREW_LOSS_REDUCTION = getSettingsFloat(modId, "containment_procedures_stat1");
+        ContainmentProcedures.FUEL_USE_REDUCTION_MAX_PERCENT = getSettingsFloat(modId, "containment_procedures_stat2");
+        ContainmentProcedures.FUEL_USE_REDUCTION_MAX_FUEL = getSettingsFloat(modId, "containment_procedures_stat3");
+        ContainmentProcedures.FUEL_SALVAGE_BONUS = getSettingsFloat(modId, "containment_procedures_stat4");
+
+        MakeshiftEquipment.SUPPLY_USE_REDUCTION_MAX_PERCENT = getSettingsFloat(modId, "makeshift_equipment_stat1");
+        MakeshiftEquipment.SUPPLY_USE_REDUCTION_MAX_UNITS = getSettingsFloat(modId, "makeshift_equipment_stat2");
+        MakeshiftEquipment.SURVEY_COST_MULT = getSettingsFloat(modId, "makeshift_equipment_stat3") / 100f;
+
+        IndustrialPlanning.SUPPLY_BONUS = getSettingsInt(modId, "industrial_planning_stat1");
+        IndustrialPlanning.CUSTOM_PRODUCTION_BONUS = getSettingsFloat(modId, "industrial_planning_stat2");
+
+        HullRestoration.DMOD_AVOID_MIN = getSettingsFloat(modId, "hull_restoration_stat1");
+        HullRestoration.DMOD_AVOID_MAX = getSettingsFloat(modId, "hull_restoration_stat2");
+        HullRestoration.DMOD_AVOID_MAX_DP = getSettingsFloat(modId, "hull_restoration_stat3");
+        HullRestoration.DMOD_AVOID_MIN_DP = getSettingsFloat(modId, "hull_restoration_stat4");
+        HullRestoration.CR_MAX_BONUS = getSettingsFloat(modId, "hull_restoration_stat5");
+        HullRestoration.CR_MINUS_PER_DMOD = getSettingsFloat(modId, "hull_restoration_stat6");
+
+        DerelictContingent.MINUS_DP_PERCENT_PER_DMOD = getSettingsFloat(modId, "derelict_operations_stat1");
     }
 
     public float getSettingsFloat(String modId, String fieldId) {

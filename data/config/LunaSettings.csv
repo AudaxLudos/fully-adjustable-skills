@@ -1,5 +1,13 @@
 fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
-combat_skill_tree_header,Combat Skill Tree Header,Header,Combat Skill Tree,,,,,Combat
+#GENERAL MODIFIABLE STATS,,,,,,,,
+ordnance_point_threshold,Ordnance Point Threshold,Double,240,,Default value: 240,0,2147483647,
+fighter_bay_threshold,Fighter Bay Threshold,Double,8,,Default value: 8,0,2147483647,
+phase_ordnance_point_threshold,Phase Ordnance Point Threshold,Double,40,,Default value: 40,0,2147483647,
+automated_points_threshold,Automated Points Threshold,Double,120,,Default value: 120,0,2147483647,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+#COMBAT SKILL TREE,,,,,,,,
 helmsmanship_header,Helmsmanship Header,Header,Helmsmanship,,,,,Combat
 helmsmanship_stat1,Maneuverability Bonus,Double,50,,Default value: 50,0,2147483647,Combat
 helmsmanship_stat2,Top Speed Bonus,Double,15,,Default value: 15,0,2147483647,Combat
@@ -63,7 +71,7 @@ missile_specialization_stat3,Missile Weapons Rate of Fire Bonus,Double,25,,Defau
 missile_specialization_stat4,Missile Weapons Ammo Regeneration Rate Bonus,Double,25,,Default value: 25 - Elite,0,2147483647,Combat
 missile_specialization_stat5,Missile Damage Dealt Bonus,Double,10,,Default value: 10 - Elite,0,2147483647,Combat
 ,,,,,,,,
-leadership_skill_tree_header,Leadership Skill Tree Header,Header,Leadership Skill Tree,,,,,Leadership
+#LEADERSHIP SKILL TREE,,,,,,,,
 tactical_drills_header,Tactical Drills Header,Header,Tactical Drills,,,,,Leadership
 tactical_drills_stat1,Damage Dealt Bonus for Combat Ships,Double,5,,Default value: 5,0,2147483647,Leadership
 tactical_drills_stat2,Planetary Operations Effectiveness Bonus,Int,50,,Default value: 50,0,2147483647,Leadership
@@ -87,11 +95,13 @@ crew_training_stat1,Combat Readiness Bonus for Combat Ships,Double,15,,Default v
 ,,,,,,,,
 carrier_group_header,Carrier Group Header,Header,Carrier Group,,,,,Leadership
 carrier_group_stat1,Fighter Replacement Rate Bonus,Double,50,,Default value: 50,0,2147483647,Leadership
+carrier_group_stat2,Officer Stat Multiplier for Stats Modified,Double,1.5,,Default value: 1.5,0,2147483647,Leadership
 ,,,,,,,,
 fighter_uplink_header,Fighter Uplink Header,Header,Fighter Uplink,,,,,Leadership
 fighter_uplink_stat1,Crew Loss Reduction Bonus Due to Fighter Losses in Combat,Double,50,,Default value: 50,0,2147483647,Leadership
 fighter_uplink_stat2,Fighter Top Speed Bonus,Double,20,,Default value: 20,0,2147483647,Leadership
 fighter_uplink_stat3,Fighter Target Leading Accuracy Bonus,Double,50,,Default value: 50,0,2147483647,Leadership
+carrier_group_stat4,Officer Stat Multiplier for Stats Modified,Double,1.5,,Default value: 1.5,0,2147483647,Leadership
 ,,,,,,,,
 officer_training_header,Officer Training Header,Header,Officer Training,,,,,Leadership
 officer_training_stat1,Maximum Level of Officer Under Your Command Bonus,Double,1,,Default value: 1,0,2147483647,Leadership
@@ -111,7 +121,7 @@ support_doctrine_stat1,Deployment Points Cost Reduction Percent Bonus,Double,20,
 support_doctrine_stat2,Deployment Points Cost Reduction Flat Bonus,Double,10,,Default value: 10,0,2147483647,Leadership
 support_doctrine_stat3,Command Point Regeneration Rate Bonus,Double,100,,Default value: 100,0,2147483647,Leadership
 ,,,,,,,,
-technology_skill_tree_header,Technology Skill Tree Header,Header,Technology Skill Tree,,,,,Technology
+#TECHNOLOGY SKILL TREE,,,,,,,,
 navigation_header,Navigation Header,Header,Navigation,,,,,Technology
 navigation_stat1,Terrain Movement Penalty Reduction Bonus,Double,30,,Default value: 30,0,2147483647,Technology
 navigation_stat2,Maximum Burn Level Bonus,Double,1,,Default value: 1,0,2147483647,Technology
@@ -159,46 +169,62 @@ cybernetic_augmentation_stat2,Damage Dealt & Damage Reduction Bonus for Each Eli
 automated_ships_header,Automated Ships Header,Header,Automated Ships,,,,,Technology
 automated_ships_stat1,Max Combat Readiness Bonus,Double,100,,Default value: 100,0,2147483647,Technology
 ,,,,,,,,
+#INDUSTRIAL SKILL TREE,,,,,,,,
+bulk_transport_header,Bulk Transport Header,Header,Bulk Transport,,,,,Industry
+bulk_transport_stat1,Cargo Capacity Bonus,Double,50,,Default value: 50,0,2147483647,Industry
+bulk_transport_stat2,Flat Cargo Capacity Threshold,Double,2000,,Default value: 2000,0,2147483647,Industry
+bulk_transport_stat3,Fuel Capacity Bonus,Double,50,,Default value: 50,0,2147483647,Industry
+bulk_transport_stat4,Flat Fuel Capacity Threshold,Double,2000,,Default value: 2000,0,2147483647,Industry
+bulk_transport_stat5,Crew Capacity Bonus,Double,50,,Default value: 50,0,2147483647,Industry
+bulk_transport_stat6,Flat Crew Capacity Threshold,Double,5000,,Default value: 5000,0,2147483647,Industry
+bulk_transport_stat7,Burn Level Bonus for Civilian Ships,Double,2,,Default value: 2,0,2147483647,Industry
 ,,,,,,,,
+salvaging_header,Salvaging Header,Header,Salvaging,,,,,Industry
+salvaging_stat1,Additional Resources Bonus for Salvaging Space Objects,Double,50,,Default value: 50,0,2147483647,Industry
+salvaging_stat2,Post Battle Salvage Bonus,Double,20,,Default value: 20,0,2147483647,Industry
+salvaging_stat3,Crew Loss Reduction Bonus for Non-Combat Operations,Double,75,,Default value: 75,0,2147483647,Industry
 ,,,,,,,,
+field_repairs_header,Field Repairs Header,Header,Field Repairs,,,,,Industry
+field_repairs_stat1,Ship Repair Rate Bonus out of Combat,Double,50,,Default value: 50,0,2147483647,Industry
+field_repairs_stat2,Hull / Armor Damage Taken Repaired Bonus After Combat at no Cost,Double,25,,Default value: 25,0,2147483647,Industry
+field_repairs_stat3,Minimum Hull Integrity for Recovered Ships,Double,30,,Default value: 30,0,2147483647,Industry
+field_repairs_stat4,Maximum Hull Integrity for Recovered Ships,Double,40,,Default value: 40,0,2147483647,Industry
+field_repairs_stat5,Minimum Combat Readiness for Recovered Ships,Double,30,,Default value: 30,0,2147483647,Industry
+field_repairs_stat6,Maximum Hull Combat Readiness for Recovered Ships,Double,40,,Default value: 40,0,2147483647,Industry
 ,,,,,,,,
+ordnance_expertise_header,Ordnance Expertise Header,Header,Ordnance Expertise,,,,,Industry
+ordnance_expertise_stat1,Flat Flux Dissipation Bonus per Ordnance Point Spent on Weapons,Double,1.5,,Default value: 1.5,0,2147483647,Industry
+ordnance_expertise_stat2,Flat Flux Capacity Bonus per Ordnance Point Spent on Weapons,Double,20,,Default value: 20 - Elite,0,2147483647,Industry
 ,,,,,,,,
+polarized_armor_header,Polarized Armor Header,Header,Polarized Armor,,,,,Industry
+polarized_armor_stat1,Maximum Damage Reduced by Armor Bonus,Double,90,,Default value: 90,0,2147483647,Industry
+polarized_armor_stat2,Additional Armor Damage Reduction Calculation Bonus,Double,50,,Default value: 50,0,2147483647,Industry
+polarized_armor_stat3,Additional EMP Damage Reduction Bonus,Double,50,,Default value: 50,0,2147483647,Industry
+polarized_armor_stat4,Flux Dissipation while Venting Bonus,Double,25,,Default value: 25,0,2147483647,Industry
 ,,,,,,,,
+containment_procedures_header,Containment Procedures Header,Header,Containment Procedures,,,,,Industry
+containment_procedures_stat1,Crew Lost Reduction Bonus due to Damage in Combat,Double,50,,Default value: 50,0,2147483647,Industry
+containment_procedures_stat2,Fuel Consumption Reduction Bonus,Double,25,,Default value: 25,0,2147483647,Industry
+containment_procedures_stat3,Flat Fuel Consumption Reduction Bonus,Double,25,,Default value: 25,0,2147483647,Industry
+containment_procedures_stat4,Fuel Salvaged Bonus,Double,25,,Default value: 25,0,2147483647,Industry
 ,,,,,,,,
+makeshift_equipment_header,Makeshift Equipment Header,Header,Makeshift Equipment,,,,,Industry
+makeshift_equipment_stat1,Monthly Supply Consumption Reduction Bonus for Ship Maintenance,Double,50,,Default value: 50,0,2147483647,Industry
+makeshift_equipment_stat2,Flat Monthly Supply Consumption Reduction Bonus for Ship Maintenance,Double,100,,Default value: 100,0,2147483647,Industry
+makeshift_equipment_stat3,Resource Consumption Reduction Bonus for Surveying Planets,Double,50,,Default value: 50,0,2147483647,Industry
 ,,,,,,,,
+industrial_planning_header,Industrial Planning Header,Header,Industrial Planning,,,,,Industry
+industrial_planning_stat1,Industry Production Bonus,Int,1,,Default value: 1,0,2147483647,Industry
+industrial_planning_stat2,Maximum Custom Ship / Weapon Production Value Bonus,Double,50,,Default value: 50,0,2147483647,Industry
 ,,,,,,,,
+hull_restoration_header,Hull Restoration Header,Header,Hull Restoration,,,,,Industry
+hull_restoration_stat1,Minimum Chance to Avoid D-Mods ,Double,75,,Default value: 75,0,2147483647,Industry
+hull_restoration_stat2,Maximum Chance to Avoid D-Mods ,Double,90,,Default value: 90,0,2147483647,Industry
+hull_restoration_stat3,Highest Chance to Avoid D-Mods Based on Deployment Points,Double,60,,Default value: 60,0,2147483647,Industry
+hull_restoration_stat4,Lowest Chance to Avoid D-Mods Based on Deployment Points,Double,5,,Default value: 5,0,2147483647,Industry
+hull_restoration_stat5,Combat Readiness Bonus,Double,15,,Default value: 15,0,2147483647,Industry
+hull_restoration_stat6,Combat Readiness Reduction Penalty Per D-Mod,Double,5,,Default value: 5,0,2147483647,Industry
 ,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
+derelict_operations_header,Derelict Operations Header,Header,Derelict Operations,,,,,Industry
+derelict_operations_stat1,Deployment Point Reduction Bonus Per D-Mod ,Double,6,,Default value: 6,0,2147483647,Industry
 ,,,,,,,,
