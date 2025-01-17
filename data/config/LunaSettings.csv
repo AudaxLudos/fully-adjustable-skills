@@ -4,16 +4,16 @@ general_header,General Stats Header,Header,General Stats,,,,,
 ordnance_point_threshold,Ordnance Point Threshold,Double,240,,Default value: 240,0,2147483647,
 fighter_bay_threshold,Fighter Bay Threshold,Double,8,,Default value: 8,0,2147483647,
 phase_ordnance_point_threshold,Phase Ordnance Point Threshold,Double,40,,Default value: 40,0,2147483647,
-automated_points_threshold,Automated Points Threshold,Double,120,,Default value: 120,0,2147483647	,
+automated_points_threshold,Automated Points Threshold,Double,120,,Default value: 120,0,2147483647,
 ,,,,,,,,
 ai_core_multiplier_header,AI Core Multiplier Header,Header,AI Core Multipliers,,,,,
 beta_ai_stat,Beta AI Core Multiplier for AI Ships,Double,2,,Default value: 2,0,2147483647,
-gamma_ai_stat,Gamma AI Core Multiplier for AI Ships,Double,3,,Default value: 3,0,2147483647	,
-alpha_ai_stat,Alpha AI Core Multiplier for AI Ships,Double,4,,Default value: 4,0,2147483647	,
-omega_ai_stat,Omega AI Core Multiplier for AI Ships,Double,5,,Default value: 5,0,2147483647	,
+gamma_ai_stat,Gamma AI Core Multiplier for AI Ships,Double,3,,Default value: 3,0,2147483647,
+alpha_ai_stat,Alpha AI Core Multiplier for AI Ships,Double,4,,Default value: 4,0,2147483647,
+omega_ai_stat,Omega AI Core Multiplier for AI Ships,Double,5,,Default value: 5,0,2147483647,
 ,,,,,,,,
 d_mod_stats_header,D-Mod Stats Header,Header,D-Mod Stats,,,,,
-max_dmods_attainable_stat,Max D-Mods Obtainable from Combat,Int,5,,Default value: 5,0,2147483647	,
+max_dmods_attainable_stat,Max D-Mods Obtainable from Combat,Int,5,,Default value: 5,0,2147483647,
 ,,,,,,,,
 #COMBAT SKILL TREE,,,,,,,,
 helmsmanship_header,Helmsmanship Header,Header,Helmsmanship,,,,,Combat
@@ -226,8 +226,8 @@ industrial_planning_stat1,Industry Production Bonus,Int,1,,Default value: 1,0,21
 industrial_planning_stat2,Maximum Custom Ship / Weapon Production Value Bonus,Double,50,,Default value: 50,0,2147483647,Industry
 ,,,,,,,,
 hull_restoration_header,Hull Restoration Header,Header,Hull Restoration,,,,,Industry
-hull_restoration_stat1,Minimum Chance to Avoid D-Mods ,Double,75,,Default value: 75,0,2147483647,Industry
-hull_restoration_stat2,Maximum Chance to Avoid D-Mods ,Double,90,,Default value: 90,0,2147483647,Industry
+hull_restoration_stat1,Minimum Chance to Avoid D-Mods ,Double,0.75,,Default value: 0.75,0,2147483647,Industry
+hull_restoration_stat2,Maximum Chance to Avoid D-Mods ,Double,0.90,,Default value: 0.90,0,2147483647,Industry
 hull_restoration_stat3,Highest Chance to Avoid D-Mods Based on Deployment Points,Double,60,,Default value: 60,0,2147483647,Industry
 hull_restoration_stat4,Lowest Chance to Avoid D-Mods Based on Deployment Points,Double,5,,Default value: 5,0,2147483647,Industry
 hull_restoration_stat5,Combat Readiness Bonus,Double,15,,Default value: 15,0,2147483647,Industry
