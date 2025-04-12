@@ -2,7 +2,7 @@
     "id": "fullyadjustableskills",
     "name": "Fully Adjustable Skills",
     "author": "Audax",
-    "version": "1.0.0",
+    "version": "1.0.0c",
     "description": "A mod for starsector that allows the player to adjust vanilla skill thresholds to whatever they desire.",
     "gameVersion": "0.98a",
     "jars": [

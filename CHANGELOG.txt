@@ -1,3 +1,10 @@
+### 1.0.0c
+- Release 1.0.0c
+- Fix ordnance point threshold stats not applying to industry skills
+- Update java version to 17 from 7
+- Update game version to 0.98a from 0.97a
+- Update hull restoration min and max d-mod chance values to 0.75 and 0.90 respectively
+
 ### 1.0.0
 - Release 1.0.0
 - Add version checker files
