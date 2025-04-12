@@ -14,6 +14,7 @@ public class Utils {
     public static void loadLunaSettings() {
         /* GENERAL SKILL STATS */
         BaseSkillEffectDescription.OP_THRESHOLD = getSettingsFloat("ordnance_point_threshold");
+        BaseSkillEffectDescription.OP_ALL_THRESHOLD = getSettingsFloat("ordnance_point_threshold");
         BaseSkillEffectDescription.FIGHTER_BAYS_THRESHOLD = getSettingsFloat("fighter_bay_threshold");
         BaseSkillEffectDescription.PHASE_OP_THRESHOLD = getSettingsFloat("phase_ordnance_point_threshold");
         BaseSkillEffectDescription.AUTOMATED_POINTS_THRESHOLD = getSettingsFloat("automated_points_threshold");
